@@ -1,4 +1,3 @@
-import java.io.File
 import java.util.PriorityQueue
 
 fun main(args: Array<String>) {
