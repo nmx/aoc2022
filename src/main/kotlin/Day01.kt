@@ -2,16 +2,16 @@ import java.io.File
 import java.util.PriorityQueue
 
 fun main(args: Array<String>) {
-    val filename = "input/Day01.txt"
-    part1(filename)
-    part2(filename)
+    val input = object {}.javaClass.getResource("Day01.txt").readText()
+    part1(input)
+    part2(input)
 }
 
-fun part1(filename: String) {
+fun part1(input: String) {
     var max = 0
     var sum = 0
 
-    File(filename).forEachLine {
+    input.split("\n").forEach {
         if (it == "") {
             if (sum > max) {
                 max = sum
@@ -27,12 +27,12 @@ fun part1(filename: String) {
     println(max)
 }
 
-fun part2(filename: String) {
+fun part2(input: String) {
     var sum = 0
     val heap: PriorityQueue<Int> = PriorityQueue<Int>(Comparator.reverseOrder())
 
 
-    File(filename).forEachLine {
+    input.split("\n").forEach {
         if (it == "") {
             heap.add(sum)
             sum = 0
