@@ -5,7 +5,7 @@ plugins {
     application
 }
 
-group = "com.nmxstudios.aoc2022"
+group = "com.nmxstudios"
 version = "1.0-SNAPSHOT"
 
 repositories {

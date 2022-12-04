@@ -1,10 +1,8 @@
-package com.nmxstudios.aoc2022.day01
-
 import java.io.File
 import java.util.PriorityQueue
 
 fun main(args: Array<String>) {
-    val filename = "input.txt"
+    val filename = "input/Day01.txt"
     part1(filename)
     part2(filename)
 }
